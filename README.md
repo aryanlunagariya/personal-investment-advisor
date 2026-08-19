@@ -10,7 +10,7 @@ recommendations, and research the latest news about companies.
 -   🤖 Multi-agent AI architecture using Agno
 -   📊 Stock and financial data using YFinanceTools
 -   📈 Analyst recommendations
--   🔎 Latest web/news research using Tavily
+-   🔎 Latest web/news research using WebSearchTools (You can go with Tavily too.)
 -   🧠 Groq-powered LLMs
 -   🤝 Team of specialized agents:
     -   **Financial Analyst** --- retrieves stock and analyst
