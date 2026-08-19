@@ -1,0 +1,23 @@
+[project]
+name = "personal-investment-advisor"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "agno>=2.9.0",
+    "ddgs>=9.15.0",
+    "duckduckgo-search>=8.1.1",
+    "groq>=0.37.1",
+    "langchain-groq>=1.1.3",
+    "langdb>=0.0.1",
+    "openai>=3.3.0",
+    "pandas>=3.0.5",
+    "phidata>=2.7.10",
+    "pypdf>=6.16.1",
+    "python-dotenv>=1.2.3",
+    "streamlit>=1.61.1",
+    "tantivy>=0.26.0",
+    "tavily>=1.1.0",
+    "yfinance>=1.6.0",
+]
