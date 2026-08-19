@@ -11,6 +11,7 @@ load_dotenv()
 
 # os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
 
+# Build Finance agent with Qwen Model using YFinanceTools
 Fin_agent = Agent(
     name="Finance Agent",
     model=Groq(id="qwen/qwen3.6-27b"),
@@ -27,6 +28,7 @@ Fin_agent = Agent(
     markdown=True,
 )
 
+# Build Web Researcher with WebSearchTools (you can go with DuckDuckGoTools)
 web_researcher = Agent(
     # api_key = GROQ_API_KEY,
     name="Web Agent",
@@ -43,6 +45,7 @@ web_researcher = Agent(
     ]
 )
 
+# Build A Finance Team with Combining Previous Model Which we build.
 Fin_team = Team(
     name="Fin Advisor Team",
     members=[Fin_agent,web_researcher],
@@ -53,6 +56,7 @@ Fin_team = Team(
         "Give a clear conclusion with key reasons and sources."
     ]   
 )
+ 
 
 # Fin_team.print_response(
 #     "Compare NVIDIA and AMD stocks. "
